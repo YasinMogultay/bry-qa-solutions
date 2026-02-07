@@ -1,0 +1,9 @@
+export { Hero } from './components/Hero.tsx';
+export { LogoBar } from './components/LogoBar.tsx';
+export { ServicesGrid } from './components/ServicesGrid.tsx';
+export { StatsStrip } from './components/StatsStrip.tsx';
+export { HowWeWork } from './components/HowWeWork.tsx';
+export { ComplianceSection } from './components/ComplianceSection.tsx';
+export { Testimonial } from './components/Testimonial.tsx';
+export { CTABanner } from './components/CTABanner.tsx';
+export { Recognition } from './components/Recognition.tsx';

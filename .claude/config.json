@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "bry-qa-solutions",
+    "type": "react-spa",
+    "frontend_dir": "frontend"
+  },
+  "autoApprovalSettings": {
+    "enabled": true,
+    "paths": [
+      "frontend/src/**",
+      "frontend/package.json",
+      "frontend/package-lock.json",
+      "frontend/tsconfig.json",
+      "frontend/vite.config.ts",
+      "frontend/eslint.config.js",
+      ".claude/skills/**",
+      "docs/**",
+      "README.md"
+    ],
+    "excludePaths": [
+      "frontend/.env*",
+      "**/secrets/**",
+      ".github/workflows/**"
+    ]
+  },
+  "bashCommandSettings": {
+    "enabled": true,
+    "autoApprove": true,
+    "allowedCommands": [
+      "cd *",
+      "npm install*",
+      "npm ci*",
+      "npm test*",
+      "npm run *",
+      "npx *",
+      "node --version*",
+      "npm --version*",
+      "ls *",
+      "cat *",
+      "grep *",
+      "find *"
+    ],
+    "blockedCommands": [
+      "rm -rf *",
+      "sudo *",
+      "chmod 777 *",
+      "mv /Users/*",
+      "cp -r / *",
+      "> /dev/*"
+    ]
+  },
+  "commands": {
+    "frontend_install": "cd frontend && npm ci || cd frontend && npm install",
+    "frontend_test": "cd frontend && npm test -- --run",
+    "frontend_lint": "cd frontend && npm run lint",
+    "frontend_lint_fix": "cd frontend && npm run lint -- --fix",
+    "frontend_build": "cd frontend && npm run build",
+    "frontend_format": "cd frontend && npx prettier --write src/",
+    "frontend_typecheck": "cd frontend && npx tsc --noEmit"
+  },
+  "quality_gates": {
+    "order": [
+      "frontend_install",
+      "frontend_lint",
+      "frontend_test",
+      "frontend_build"
+    ],
+    "fail_fast": true
+  }
+}

@@ -1,0 +1,21 @@
+# Node/Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Claude local settings
+.claude/settings.local.json
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Keep .env.example
+!.env.example
