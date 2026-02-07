@@ -9,10 +9,10 @@ export const SITE = {
   email: 'info@bryqa.com',
   phone: '(301) 555-0147',
   address: {
-    street: '7900 Westpark Drive, Suite T300',
-    city: 'Tysons',
-    state: 'VA',
-    zip: '22102',
+    street: 'Madison Ct',
+    city: 'Celina',
+    state: 'TX',
+    zip: '75009',
   },
 } as const;
 
@@ -22,30 +22,30 @@ export const NAV_LINKS = [
     href: '/services',
     children: [
       {
-        group: 'QA & Functional',
+        group: 'Core Testing',
         items: [
-          { label: 'QA Outsourcing', href: '/services/qa-outsourcing', description: 'Extend your team with cleared QA engineers' },
-          { label: 'Functional Testing', href: '/services/functional-testing', description: 'Requirements validation, regression & compatibility' },
-          { label: 'Test Automation', href: '/services/test-automation', description: 'CI/CD-ready Selenium, Playwright & Cypress suites' },
-          { label: 'QA Consulting & IV&V', href: '/services/qa-consulting-ivv', description: 'Strategy, process maturity & independent verification' },
+          { label: 'Test Automation', href: '/services/test-automation', description: 'Playwright-based UI/API automation with CI quality gates' },
+          { label: 'API & Integration Testing', href: '/services/api-testing', description: 'REST contract validation, negative tests, auth/error flows' },
+          { label: 'Manual QA & UAT', href: '/services/manual-qa-testing', description: 'Exploratory, regression, release sign-off support' },
+          { label: 'Functional & Regression', href: '/services/functional-testing', description: 'Requirements traceability & cross-browser validation' },
         ],
       },
       {
-        group: 'UX & Performance',
+        group: 'Specialized Testing',
         items: [
           { label: 'Performance Testing', href: '/services/performance-testing', description: 'Load, stress, and scalability validation' },
-          { label: 'Managed Testing', href: '/services/managed-testing', description: 'End-to-end test operations managed by us' },
-          { label: 'Accessibility Testing', href: '/services/accessibility-testing', description: 'Section 508 & WCAG 2.1 AA compliance audits' },
-          { label: 'Compliance Testing', href: '/services/compliance-testing', description: 'FISMA, HIPAA, and GDPR standards validation' },
+          { label: 'Security Testing', href: '/services/security-testing', description: 'OWASP-aligned vulnerability assessments' },
+          { label: 'Penetration Testing', href: '/services/penetration-testing', description: 'Controlled attack simulation & risk assessment' },
+          { label: 'Mobile Testing', href: '/services/mobile-testing', description: 'iOS & Android native, hybrid & responsive testing' },
         ],
       },
       {
-        group: 'Security & Specialized',
+        group: 'Strategy & Compliance',
         items: [
-          { label: 'Security Testing', href: '/services/security-testing', description: 'OWASP-aligned vulnerability assessments' },
-          { label: 'Penetration Testing', href: '/services/penetration-testing', description: 'Controlled attack simulation & risk assessment' },
-          { label: 'DevOps Testing', href: '/services/devops-testing', description: 'Shift-left quality gates in your CI/CD pipeline' },
-          { label: 'Dedicated QA Team', href: '/services/dedicated-qa-team', description: 'A full-time QA squad embedded in your workflow' },
+          { label: 'QA Advisory & IV&V', href: '/services/qa-advisory', description: 'Test planning, risk-based coverage, quality reporting' },
+          { label: 'CI/CD Quality Gates', href: '/services/cicd-quality-gates', description: 'Shift-left quality gates in your CI/CD pipeline' },
+          { label: 'Release Readiness', href: '/services/release-readiness', description: 'Defect triage, go/no-go criteria & sign-off support' },
+          { label: 'Accessibility (508)', href: '/services/accessibility-testing', description: 'Section 508 & WCAG 2.1 AA compliance audits' },
         ],
       },
     ],
@@ -55,39 +55,30 @@ export const NAV_LINKS = [
     href: '/technologies',
     children: [
       {
-        group: 'Automation & Frameworks',
+        group: 'Automation & API',
         items: [
+          { label: 'Playwright', href: '/technologies#test-automation', description: 'Modern end-to-end UI & API testing' },
           { label: 'Selenium', href: '/technologies#test-automation', description: 'Cross-platform web automation' },
-          { label: 'Playwright', href: '/technologies#test-automation', description: 'Modern end-to-end testing' },
-          { label: 'Cypress', href: '/technologies#test-automation', description: 'Developer-friendly test framework' },
+          { label: 'Postman / REST Assured', href: '/technologies#api-testing', description: 'API testing and contract validation' },
           { label: 'Appium', href: '/technologies#mobile-testing', description: 'Cross-platform mobile automation' },
         ],
       },
       {
-        group: 'API & Performance',
+        group: 'Frameworks & Quality',
         items: [
-          { label: 'Postman / REST Assured', href: '/technologies#api-testing', description: 'API testing and validation' },
+          { label: 'JUnit 5 / pytest', href: '/technologies#test-frameworks', description: 'Test frameworks for Java & Python' },
           { label: 'JMeter', href: '/technologies#performance-load', description: 'Load and performance testing' },
-          { label: 'Gatling & k6', href: '/technologies#performance-load', description: 'Modern performance frameworks' },
-          { label: 'Karate', href: '/technologies#api-testing', description: 'Unified API and perf testing' },
-        ],
-      },
-      {
-        group: 'Security & Methodology',
-        items: [
-          { label: 'OWASP ZAP / Burp Suite', href: '/technologies#security-testing', description: 'Application security testing' },
-          { label: 'Cucumber / BDD', href: '/technologies#bdd-methodology', description: 'Behavior-driven development' },
-          { label: 'pytest / JUnit 5', href: '/technologies#bdd-methodology', description: 'Test frameworks for Python & Java' },
-          { label: 'SonarQube', href: '/technologies#security-testing', description: 'Static code analysis' },
+          { label: 'SonarQube', href: '/technologies#code-quality', description: 'Static analysis & code quality gates' },
+          { label: 'OWASP ZAP', href: '/technologies#security-testing', description: 'Application security scanning' },
         ],
       },
       {
         group: 'DevOps & Management',
         items: [
-          { label: 'Jenkins / GitHub Actions', href: '/technologies#cicd-devops', description: 'CI/CD pipeline automation' },
+          { label: 'GitHub Actions / Azure DevOps', href: '/technologies#cicd-devops', description: 'CI/CD pipeline automation' },
           { label: 'Docker', href: '/technologies#cicd-devops', description: 'Containerized test environments' },
+          { label: 'Jira / Azure Boards', href: '/technologies#test-management', description: 'Project & defect management' },
           { label: 'TestRail / Zephyr', href: '/technologies#test-management', description: 'Test case management' },
-          { label: 'Jira / qTest', href: '/technologies#test-management', description: 'Project and test management' },
         ],
       },
     ],
@@ -115,9 +106,8 @@ export const NAV_LINKS = [
         group: 'Company',
         items: [
           { label: 'About Us', href: '/about', description: 'Our story, mission, and values' },
-          { label: 'Leadership Team', href: '/about', description: 'Meet the people behind BRYQA' },
-          { label: 'Certifications', href: '/about', description: 'ISO, CMMI, and compliance credentials' },
-          { label: 'Contract Vehicles', href: '/#industries', description: 'GSA MAS, CIO-SP3, and more' },
+          { label: 'Certifications', href: '/about', description: 'SBA 8(a), HUBZone, and compliance' },
+          { label: 'Contact', href: '/contact', description: 'Get in touch with our team' },
         ],
       },
     ],
@@ -126,52 +116,115 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO_STATS = [
-  { value: '250+', label: 'software QA engineers' },
-  { value: '15+', label: 'years of experience in QA and software testing' },
-  { value: '300+', label: 'clients served across government and commercial' },
-  { value: '96%', label: 'client retention rate' },
+  { value: '15+', label: 'years of combined QA experience' },
+  { value: '8(a)', label: 'SBA certified small business' },
+  { value: '100%', label: 'founder-led engagement on every project' },
+  { value: '508', label: 'Section 508 & WCAG accessibility expertise' },
 ] as const;
 
 export const TRUSTED_BY = [
-  'GSA', 'DHS', 'DoD', 'HHS', 'VA', 'USDA',
+  'SBA 8(a)', 'HUBZone', 'SDB',
 ] as const;
 
 export const SERVICES = [
-  {
-    id: 'manual-qa',
-    slug: 'qa-outsourcing',
-    title: 'QA Outsourcing',
-    shortTitle: 'Manual QA',
-    description:
-      'Extend your testing capacity with experienced QA engineers from our cleared talent pool — fast, compliant, and cost-effective.',
-    icon: 'search',
-  },
   {
     id: 'automation',
     slug: 'test-automation',
     title: 'Test Automation Engineering',
     shortTitle: 'Automation',
     description:
-      'Selenium, Playwright, and Cypress frameworks designed for your CI/CD pipeline. We build maintainable, scalable automation suites that accelerate your release cycles.',
+      'Playwright-based UI and API automation with CI quality gates. Maintainable frameworks that accelerate your release cycles.',
     icon: 'cog',
   },
   {
+    id: 'api',
+    slug: 'api-testing',
+    title: 'API & Integration Testing',
+    shortTitle: 'API',
+    description:
+      'REST contract validation, negative tests, authentication and error flows. Automated regression suites for continuous confidence.',
+    icon: 'globe',
+  },
+  {
+    id: 'manual-qa',
+    slug: 'manual-qa-testing',
+    title: 'Manual QA & UAT',
+    shortTitle: 'Manual QA',
+    description:
+      'Exploratory testing, regression coverage, and release sign-off support by experienced QA engineers.',
+    icon: 'search',
+  },
+  {
+    id: 'advisory',
+    slug: 'qa-advisory',
+    title: 'QA Advisory & Independent Validation',
+    shortTitle: 'QA Advisory',
+    description:
+      'Test planning, risk-based coverage design, and quality reporting. Independent verification that satisfies federal oversight.',
+    icon: 'check',
+  },
+  {
+    id: 'functional',
+    slug: 'functional-testing',
+    title: 'Functional & Regression Testing',
+    shortTitle: 'Functional',
+    description:
+      'Requirements traceability, cross-browser validation, and comprehensive regression suites to ensure every feature works as specified.',
+    icon: 'check',
+  },
+  {
+    id: 'cicd',
+    slug: 'cicd-quality-gates',
+    title: 'CI/CD Quality Gates',
+    shortTitle: 'CI/CD',
+    description:
+      'Shift-left quality gates in your pipeline to catch defects earlier. Automated test execution, thresholds, and fast feedback loops.',
+    icon: 'git-branch',
+  },
+  {
+    id: 'release',
+    slug: 'release-readiness',
+    title: 'Release Readiness & Defect Triage',
+    shortTitle: 'Release',
+    description:
+      'Go/no-go criteria, defect triage, risk-based release assessments, and stakeholder sign-off support.',
+    icon: 'chart',
+  },
+  {
     id: 'performance',
-    slug: 'managed-testing',
-    title: 'Managed Testing Services',
+    slug: 'performance-testing',
+    title: 'Performance Testing',
     shortTitle: 'Performance',
     description:
-      'Hand off your testing operations to us — we plan, execute, and report while you stay focused on delivery and mission objectives.',
+      'Load, stress, and scalability validation using JMeter to ensure your systems perform under real-world conditions.',
     icon: 'chart',
   },
   {
     id: 'security',
     slug: 'security-testing',
-    title: 'Security Testing & Assessment',
+    title: 'Security Testing',
     shortTitle: 'Security',
     description:
-      'OWASP-aligned vulnerability assessments, static analysis, and penetration testing coordination. We help you achieve and maintain your Authority to Operate (ATO).',
+      'OWASP-aligned vulnerability assessments, SAST/DAST analysis to identify risks and support your Authority to Operate.',
     icon: 'shield',
+  },
+  {
+    id: 'pentest',
+    slug: 'penetration-testing',
+    title: 'Penetration Testing',
+    shortTitle: 'Pen Testing',
+    description:
+      'Controlled attack simulation and risk assessment to find exploitable vulnerabilities before adversaries do.',
+    icon: 'crosshair',
+  },
+  {
+    id: 'mobile',
+    slug: 'mobile-testing',
+    title: 'Mobile Testing',
+    shortTitle: 'Mobile',
+    description:
+      'iOS and Android testing for native, hybrid, and responsive web apps using Appium and real device labs.',
+    icon: 'phone',
   },
   {
     id: 'accessibility',
@@ -179,34 +232,25 @@ export const SERVICES = [
     title: 'Section 508 & Accessibility',
     shortTitle: 'Accessibility',
     description:
-      'Full Section 508 and WCAG 2.1 AA compliance testing for government systems. Manual and automated audits with remediation guidance and VPAT documentation support.',
+      'Section 508 and WCAG 2.1 AA compliance testing. Manual and automated audits with remediation guidance.',
     icon: 'accessibility',
-  },
-  {
-    id: 'ivv',
-    slug: 'qa-consulting-ivv',
-    title: 'QA Consulting & IV&V',
-    shortTitle: 'IV&V',
-    description:
-      'Get expert advice to improve your testing strategy, fix QA bottlenecks, and ensure systems meet federal standards through independent verification.',
-    icon: 'check',
   },
 ] as const;
 
 export const WHAT_SETS_US_APART = [
-  'SBA 8(a) certified small business',
-  'CMMI Level 3 appraised processes',
-  'ISO 9001:2015 & ISO 27001 certified',
-  'Secret / Top Secret cleared staff',
-  'Active GSA MAS contract holder',
-  'Transparent pricing, no hidden gotchas',
+  'SBA 8(a) & HUBZone certified',
+  'Public Trust cleared personnel',
+  'Founder-led, hands-on delivery',
+  'Federal compliance expertise (FISMA, HIPAA)',
+  'Agile small business responsiveness',
+  'Transparent pricing, no hidden fees',
 ] as const;
 
 export const STATS = [
-  { value: '10+', label: 'Years of Experience' },
-  { value: '150+', label: 'Projects Delivered' },
-  { value: '50+', label: 'Federal Clients Served' },
-  { value: '99.2%', label: 'Client Satisfaction Rate' },
+  { value: '15+', label: 'Years Combined QA Experience' },
+  { value: '8(a)', label: 'SBA Certified Small Business' },
+  { value: 'HUBZone', label: 'Certified HUBZone Business' },
+  { value: 'SDB', label: 'Small Disadvantaged Business' },
 ] as const;
 
 export const PROCESS_STEPS = [
@@ -237,42 +281,18 @@ export const PROCESS_STEPS = [
 ] as const;
 
 export const CERTIFICATIONS = [
-  { name: 'ISO 9001:2015', description: 'Quality Management Systems' },
-  { name: 'ISO 27001', description: 'Information Security Management' },
-  { name: 'ISO 20000', description: 'IT Service Management' },
-  { name: 'CMMI Level 3', description: 'Capability Maturity Model' },
+  { name: 'SBA 8(a)', description: 'Small Business Administration' },
+  { name: 'HUBZone', description: 'Historically Underutilized Business Zone' },
+  { name: 'SDB', description: 'Small Disadvantaged Business' },
 ] as const;
 
 export const CONTRACT_VEHICLES = [
-  { name: 'GSA MAS', description: 'GSA Multiple Award Schedule — IT Professional Services' },
-  { name: 'CIO-SP3', description: 'NIH Chief Information Officer Solutions and Partners' },
-  { name: 'Alliant 2', description: 'GSA Alliant 2 Small Business GWAC' },
-  { name: 'SEWP V', description: 'NASA Solutions for Enterprise-Wide Procurement' },
+  { name: 'SBA 8(a)', description: 'Sole-source and competitive set-aside eligibility' },
+  { name: 'HUBZone', description: 'Price evaluation preference on federal contracts' },
+  { name: 'SAM.gov', description: 'Registered and active in System for Award Management' },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote:
-      'BRYQA embedded with our development team and cut our post-release defects by 60%. They understand government timelines and compliance — they just get it.',
-    author: 'Director of Engineering',
-    company: 'Federal Civilian Agency',
-    rating: 5,
-  },
-  {
-    quote:
-      'Their IV&V team identified critical integration issues weeks before our go-live date. That kind of thoroughness saved us from a costly production failure.',
-    author: 'Program Manager',
-    company: 'DoD Contractor',
-    rating: 5,
-  },
-  {
-    quote:
-      'We needed Section 508 compliance testing on an aggressive timeline. BRYQA delivered a complete VPAT and remediation roadmap in under three weeks.',
-    author: 'CTO',
-    company: 'Health IT Organization',
-    rating: 5,
-  },
-] as const;
+export const TESTIMONIALS: readonly { quote: string; author: string; company: string; rating: number }[] = [];
 
 export const INDUSTRIES = [
   {
@@ -301,25 +321,12 @@ export const TEAM_MEMBERS = [
   {
     name: 'Bryan Reynolds',
     title: 'Founder & CEO',
-    bio: 'Former federal QA lead with 15+ years delivering mission-critical testing programs across DoD and civilian agencies.',
-  },
-  {
-    name: 'Sarah Chen',
-    title: 'VP of Delivery',
-    bio: 'CMMI appraiser and test strategy architect. Led QA transformation programs for three Cabinet-level agencies.',
-  },
-  {
-    name: 'Marcus Johnson',
-    title: 'Director of Automation',
-    bio: 'Full-stack automation engineer specializing in CI/CD integration, Playwright, and performance testing at scale.',
+    bio: 'QA professional with 15+ years of experience delivering mission-critical testing programs for federal agencies and commercial organizations.',
   },
 ] as const;
 
 export const AWARDS = [
-  { name: 'Top Software Testing Company', year: '2019 — 2025' },
-  { name: 'Leading Testing Provider', year: 'Recognized' },
-  { name: 'ISO 9001 Certified', year: 'Quality Standard' },
-  { name: 'ISO 27001 Certified', year: 'Security Standard' },
-  { name: 'CMMI Level 3', year: 'Process Maturity' },
-  { name: 'SBA 8(a)', year: 'Small Business' },
+  { name: 'SBA 8(a)', year: 'Certified' },
+  { name: 'HUBZone', year: 'Certified' },
+  { name: 'SDB', year: 'Certified' },
 ] as const;

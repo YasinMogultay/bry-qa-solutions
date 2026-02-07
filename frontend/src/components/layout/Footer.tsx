@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SITE, SERVICES, CERTIFICATIONS } from '../../lib/constants.ts';
 import { Icon } from '../ui/Icon.tsx';
+import { Logo } from '../ui/Logo.tsx';
 
 export function Footer() {
   return (
@@ -8,8 +9,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-white font-bold text-xl tracking-tight">{SITE.name}</span>
+            <div className="mb-4">
+              <Logo variant="light" className="h-9 w-auto" />
             </div>
             <p className="text-sm leading-relaxed mb-6">
               SBA-certified small business delivering quality assurance and

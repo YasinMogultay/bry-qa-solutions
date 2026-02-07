@@ -1,7 +1,8 @@
 import { useState, useCallback, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
-import { SITE, NAV_LINKS } from '../../lib/constants.ts';
+import { NAV_LINKS } from '../../lib/constants.ts';
+import { Logo } from '../ui/Logo.tsx';
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,8 +35,8 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-[72px]">
-          <Link to="/" className="text-xl font-bold text-dark tracking-tight">
-            {SITE.name}
+          <Link to="/" className="block">
+            <Logo variant="dark" className="h-9 w-auto" />
           </Link>
 
           {/* Desktop nav */}
@@ -97,8 +98,8 @@ export function Navbar() {
       {/* Full-width mega-menu panel */}
       {openLink && 'children' in openLink && openLink.children && (
         <div className="hidden lg:block border-t border-gray-100 bg-white shadow-lg animate-dropdown-in">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-10 pb-12">
-            <div className="grid gap-10" style={{ gridTemplateColumns: `repeat(${Math.min(openLink.children.length, 4)}, minmax(0, 1fr))` }} role="menu">
+          <div className={`max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-10 pb-12 ${openLink.children.length <= 2 ? 'flex justify-center' : ''}`}>
+            <div className={`grid gap-10 ${openLink.children.length <= 2 ? 'max-w-md w-full text-center' : ''}`} style={{ gridTemplateColumns: `repeat(${Math.min(openLink.children.length, 4)}, minmax(0, 1fr))` }} role="menu">
               {openLink.children.map((group, groupIdx) => (
                 <div
                   key={group.group}

@@ -9,14 +9,14 @@ export function ComplianceSection() {
       <Container>
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
-            Contract Vehicles &amp; Industries
+            Certifications &amp; Industries
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-dark tracking-tight">
-            Built for Regulated Industries
+            Ready for Federal Work
           </h2>
           <p className="mt-4 text-lg text-gray-500 max-w-3xl mx-auto">
-            We hold active contract vehicles and deep domain expertise across federal
-            and commercial sectors with the highest compliance standards.
+            SBA-certified and registered to compete for federal contracts. We bring
+            domain expertise across regulated industries with the highest compliance standards.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ export function ComplianceSection() {
           <div>
             <h3 className="text-lg font-semibold text-dark mb-6 flex items-center gap-2">
               <Icon name="globe" className="w-5 h-5 text-brand-600" />
-              Contract Vehicles
+              Set-Aside Eligibility
             </h3>
             <div className="space-y-3">
               {CONTRACT_VEHICLES.map((vehicle) => (

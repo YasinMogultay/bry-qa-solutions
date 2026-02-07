@@ -4,6 +4,8 @@ import { Section } from '../../../components/layout/Section.tsx';
 import { TESTIMONIALS } from '../../../lib/constants.ts';
 
 export function Testimonial() {
+  if (TESTIMONIALS.length === 0) return null;
+
   return (
     <Section background="white">
       <Container>

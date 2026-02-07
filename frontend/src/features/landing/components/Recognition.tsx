@@ -10,15 +10,15 @@ export function Recognition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
-              <span className="text-gray-400">Recognized</span><br />
-              <span className="text-dark">excellence in software testing and QA</span>
+              <span className="text-gray-400">Certified</span><br />
+              <span className="text-dark">small business ready for federal work</span>
             </h2>
             <p className="mt-6 text-gray-500 leading-relaxed max-w-lg">
-              Our commitment to delivering outstanding software testing and
-              quality assurance services has been recognized by{' '}
-              <strong className="text-dark">industry certifications</strong>. These honors reflect not just our
-              team&apos;s hard work and innovation, but also the success we&apos;ve{' '}
-              <strong className="text-dark">achieved together with our partners</strong>.
+              As an SBA-certified small business, BRYQA is eligible for{' '}
+              <strong className="text-dark">sole-source and set-aside contracts</strong> across
+              federal agencies. Our certifications give prime contractors and
+              government buyers a{' '}
+              <strong className="text-dark">trusted, compliant QA partner</strong>.
             </p>
           </div>
 

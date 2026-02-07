@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../components/layout/Container.tsx';
 import { Section } from '../components/layout/Section.tsx';
 import { Icon } from '../components/ui/Icon.tsx';
-import { SITE, TEAM_MEMBERS, CERTIFICATIONS } from '../lib/constants.ts';
+import { SITE, CERTIFICATIONS } from '../lib/constants.ts';
 
 export function AboutPage() {
   return (
@@ -52,10 +52,10 @@ export function AboutPage() {
               <h3 className="text-lg font-semibold text-dark mb-6">Company Snapshot</h3>
               <dl className="space-y-4">
                 {[
-                  { label: 'Founded', value: '2014' },
-                  { label: 'Headquarters', value: `${SITE.address.city}, ${SITE.address.state}` },
-                  { label: 'Employees', value: '50+' },
-                  { label: 'Security Clearances', value: 'Secret / Top Secret (select staff)' },
+                  { label: 'Founded', value: '2026' },
+                  { label: 'Headquarters', value: 'DFW,TX' },
+                  { label: 'Employees', value: '2+' },
+                  { label: 'Security Clearances', value: 'Public Trust (Others Obtainable)' },
                   { label: 'SBA Certifications', value: '8(a), SDB, HUBZone' },
                   { label: 'NAICS Codes', value: '541511, 541512, 541519' },
                 ].map((item) => (
@@ -70,43 +70,14 @@ export function AboutPage() {
         </Container>
       </Section>
 
-      <Section background="gray">
-        <Container>
-          <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
-              Leadership
-            </p>
-            <h2 className="text-3xl font-bold text-dark tracking-tight">
-              Experienced Leaders, Proven Results
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {TEAM_MEMBERS.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white rounded-2xl border border-gray-100 p-6 text-center"
-              >
-                <div className="w-20 h-20 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="users" className="w-8 h-8" />
-                </div>
-                <h3 className="text-lg font-semibold text-dark">{member.name}</h3>
-                <p className="text-sm text-brand-600 font-medium mb-3">{member.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
       <Section background="white">
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dark tracking-tight">
-              Certifications &amp; Standards
+              SBA Certifications
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {CERTIFICATIONS.map((cert) => (
               <div
                 key={cert.name}

@@ -4,17 +4,17 @@ import { StatsStrip } from './StatsStrip.tsx';
 describe('StatsStrip', () => {
   it('renders all stats', () => {
     render(<StatsStrip />);
-    expect(screen.getByText('10+')).toBeInTheDocument();
-    expect(screen.getByText('150+')).toBeInTheDocument();
-    expect(screen.getByText('50+')).toBeInTheDocument();
-    expect(screen.getByText('99.2%')).toBeInTheDocument();
+    expect(screen.getByText('15+')).toBeInTheDocument();
+    expect(screen.getByText('8(a)')).toBeInTheDocument();
+    expect(screen.getByText('HUBZone')).toBeInTheDocument();
+    expect(screen.getByText('SDB')).toBeInTheDocument();
   });
 
   it('renders stat labels', () => {
     render(<StatsStrip />);
-    expect(screen.getByText('Years of Experience')).toBeInTheDocument();
-    expect(screen.getByText('Projects Delivered')).toBeInTheDocument();
-    expect(screen.getByText('Federal Clients Served')).toBeInTheDocument();
-    expect(screen.getByText('Client Satisfaction Rate')).toBeInTheDocument();
+    expect(screen.getByText('Years Combined QA Experience')).toBeInTheDocument();
+    expect(screen.getByText('SBA Certified Small Business')).toBeInTheDocument();
+    expect(screen.getByText('Certified HUBZone Business')).toBeInTheDocument();
+    expect(screen.getByText('Small Disadvantaged Business')).toBeInTheDocument();
   });
 });
