@@ -1,9 +1,9 @@
 export const SITE = {
   name: 'BRYQA',
   legalName: 'BRYQA, LLC',
-  tagline: 'Your Trusted QA Partner',
-  headline: 'Your QA Partner',
-  subheadline: 'We provide best-in-class software testing & QA services for federal agencies and mission-critical systems.',
+  tagline: 'Founder-led QA Engineering',
+  headline: 'QA Engineering for Federal Contractors and High-Stakes Software Teams',
+  subheadline: 'We provide automation, API, regression, and UAT support to reduce defects, shorten validation cycles, and improve release readiness.',
   description:
     'BRYQA is an SBA-certified small business delivering quality assurance, test automation, and independent verification & validation services to federal agencies and commercial organizations.',
   email: 'info@bryqasolutions.com',
