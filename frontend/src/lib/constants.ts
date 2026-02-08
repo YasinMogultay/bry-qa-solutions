@@ -6,8 +6,8 @@ export const SITE = {
   subheadline: 'We provide best-in-class software testing & QA services for federal agencies and mission-critical systems.',
   description:
     'BRYQA is an SBA-certified small business delivering quality assurance, test automation, and independent verification & validation services to federal agencies and commercial organizations.',
-  email: 'info@bryqa.com',
-  phone: '(301) 555-0147',
+  email: 'info@bryqasolutions.com',
+  phone: '(210) 740-8829',
   address: {
     street: 'Madison Ct',
     city: 'Celina',
