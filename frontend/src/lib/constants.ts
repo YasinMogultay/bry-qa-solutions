@@ -1,11 +1,11 @@
 export const SITE = {
   name: 'BRYQA',
-  legalName: 'BRYQA, LLC',
+  legalName: 'Bry Tech Solutions LLC',
   tagline: 'Founder-led QA Engineering',
   headline: 'QA Engineering for Federal Contractors and High-Stakes Software Teams',
   subheadline: 'We provide automation, API, regression, and UAT support to reduce defects, shorten validation cycles, and improve release readiness.',
   description:
-    'BRYQA is an SBA-certified small business delivering quality assurance, test automation, and independent verification & validation services to federal agencies and commercial organizations.',
+    'BRYQA is a small business delivering quality assurance, test automation, and independent verification & validation services to federal agencies and commercial organizations.',
   email: 'info@bryqasolutions.com',
   phone: '(210) 740-8829',
   address: {
@@ -66,9 +66,9 @@ export const NAV_LINKS = [
       {
         group: 'Frameworks & Quality',
         items: [
-          { label: 'JUnit 5 / pytest', href: '/technologies#test-frameworks', description: 'Test frameworks for Java & Python' },
+          { label: 'JUnit 5 / pytest', href: '/technologies#bdd-methodology', description: 'Test frameworks for Java & Python' },
           { label: 'JMeter', href: '/technologies#performance-load', description: 'Load and performance testing' },
-          { label: 'SonarQube', href: '/technologies#code-quality', description: 'Static analysis & code quality gates' },
+          { label: 'SonarQube', href: '/technologies#security-testing', description: 'Static analysis & code quality gates' },
           { label: 'OWASP ZAP', href: '/technologies#security-testing', description: 'Application security scanning' },
         ],
       },
@@ -106,7 +106,7 @@ export const NAV_LINKS = [
         group: 'Company',
         items: [
           { label: 'About Us', href: '/about', description: 'Our story, mission, and values' },
-          { label: 'Certifications', href: '/about', description: 'SBA 8(a), HUBZone, and compliance' },
+          { label: 'Registrations', href: '/about', description: 'SAM.gov, NAICS codes & compliance' },
           { label: 'Contact', href: '/contact', description: 'Get in touch with our team' },
         ],
       },
@@ -117,13 +117,13 @@ export const NAV_LINKS = [
 
 export const HERO_STATS = [
   { value: '15+', label: 'years of combined QA experience' },
-  { value: '8(a)', label: 'SBA certified small business' },
+  { value: 'SAM', label: 'registered small business' },
   { value: '100%', label: 'founder-led engagement on every project' },
   { value: '508', label: 'Section 508 & WCAG accessibility expertise' },
 ] as const;
 
 export const TRUSTED_BY = [
-  'SBA 8(a)', 'HUBZone', 'SDB',
+  'SAM.gov Registered',
 ] as const;
 
 export const SERVICES = [
@@ -238,8 +238,8 @@ export const SERVICES = [
 ] as const;
 
 export const WHAT_SETS_US_APART = [
-  'SBA 8(a) & HUBZone certified',
-  'Public Trust cleared personnel',
+  'SAM.gov registered small business',
+  'Public Trust clearance obtainable personnel',
   'Founder-led, hands-on delivery',
   'Federal compliance expertise (FISMA, HIPAA)',
   'Agile small business responsiveness',
@@ -248,9 +248,9 @@ export const WHAT_SETS_US_APART = [
 
 export const STATS = [
   { value: '15+', label: 'Years Combined QA Experience' },
-  { value: '8(a)', label: 'SBA Certified Small Business' },
-  { value: 'HUBZone', label: 'Certified HUBZone Business' },
-  { value: 'SDB', label: 'Small Disadvantaged Business' },
+  { value: 'SAM', label: 'SAM.gov Registered Entity' },
+  { value: '541512', label: 'Primary NAICS Code' },
+  { value: '100%', label: 'Founder-Led Delivery' },
 ] as const;
 
 export const PROCESS_STEPS = [
@@ -281,15 +281,17 @@ export const PROCESS_STEPS = [
 ] as const;
 
 export const CERTIFICATIONS = [
-  { name: 'SBA 8(a)', description: 'Small Business Administration' },
-  { name: 'HUBZone', description: 'Historically Underutilized Business Zone' },
-  { name: 'SDB', description: 'Small Disadvantaged Business' },
+  { name: 'SAM.gov', description: 'System for Award Management — registered entity' },
+  { name: 'NAICS 541512', description: 'Computer Systems Design Services' },
+  { name: 'NAICS 541519', description: 'Other Computer Related Services' },
+  { name: 'NAICS 541611', description: 'Administrative Management Consulting Services' },
 ] as const;
 
 export const CONTRACT_VEHICLES = [
-  { name: 'SBA 8(a)', description: 'Sole-source and competitive set-aside eligibility' },
-  { name: 'HUBZone', description: 'Price evaluation preference on federal contracts' },
   { name: 'SAM.gov', description: 'Registered and active in System for Award Management' },
+  { name: 'NAICS 541512', description: 'Computer Systems Design Services' },
+  { name: 'NAICS 541519', description: 'Other Computer Related Services' },
+  { name: 'NAICS 541611', description: 'Administrative Management Consulting Services' },
 ] as const;
 
 export const TESTIMONIALS: readonly { quote: string; author: string; company: string; rating: number }[] = [];
@@ -326,7 +328,8 @@ export const TEAM_MEMBERS = [
 ] as const;
 
 export const AWARDS = [
-  { name: 'SBA 8(a)', year: 'Certified' },
-  { name: 'HUBZone', year: 'Certified' },
-  { name: 'SDB', year: 'Certified' },
+  { name: 'SAM.gov', year: 'Registered' },
+  { name: 'NAICS 541512', year: 'Active' },
+  { name: 'NAICS 541519', year: 'Active' },
+  { name: 'NAICS 541611', year: 'Active' },
 ] as const;

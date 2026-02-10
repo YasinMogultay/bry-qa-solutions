@@ -62,7 +62,7 @@ export function ContactPage() {
                 <h3 className="font-semibold text-dark mb-3">Why Choose BRYQA?</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
                   {[
-                    'SBA 8(a) certified small business',
+                    'SAM.gov registered small business',
                     'Cleared personnel available',
                     'CMMI Level 3 appraised processes',
                     'Active GSA MAS contract holder',

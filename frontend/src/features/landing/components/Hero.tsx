@@ -62,8 +62,7 @@ export function Hero() {
       <div className="relative border-t border-white/10 bg-white/5 backdrop-blur-sm">
         <Container>
           <div className="py-6 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-            <span className="text-sm text-gray-500 font-medium">Certified</span>
-            <div className="flex items-center gap-8 sm:gap-12" aria-label="Certifications">
+            <div className="flex items-center gap-8 sm:gap-12" aria-label="Registrations">
               {TRUSTED_BY.map((name) => (
                 <span key={name} className="text-lg font-bold text-gray-400 tracking-wide">
                   {name}

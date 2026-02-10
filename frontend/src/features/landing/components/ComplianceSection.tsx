@@ -15,7 +15,7 @@ export function ComplianceSection() {
             Ready for Federal Work
           </h2>
           <p className="mt-4 text-lg text-gray-500 max-w-3xl mx-auto">
-            SBA-certified and registered to compete for federal contracts. We bring
+            SAM.gov registered and ready to support federal contracts. We bring
             domain expertise across regulated industries with the highest compliance standards.
           </p>
         </div>

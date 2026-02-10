@@ -13,7 +13,7 @@ export function Footer() {
               <Logo variant="light" className="h-9 w-auto" />
             </div>
             <p className="text-sm leading-relaxed mb-6">
-              SBA-certified small business delivering quality assurance and
+              Small business delivering quality assurance and
               IV&amp;V services to federal agencies and commercial organizations.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -85,7 +85,7 @@ export function Footer() {
       <div className="border-t border-dark-border">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} {SITE.legalName}. All rights reserved.</p>
-          <p>DUNS: 000000000 | CAGE: 00000 | UEI: 000000000000</p>
+          <p>UEI: Pending | CAGE: Pending</p>
         </div>
       </div>
     </footer>

@@ -42,7 +42,7 @@ export function AboutPage() {
                   bringing structured processes and a relentless focus on defect prevention.
                 </p>
                 <p>
-                  As an SBA-certified small business, we are agile enough to move fast
+                  As a small business, we are agile enough to move fast
                   and experienced enough to meet the most rigorous government standards.
                 </p>
               </div>
@@ -55,9 +55,9 @@ export function AboutPage() {
                   { label: 'Founded', value: '2026' },
                   { label: 'Headquarters', value: 'DFW,TX' },
                   { label: 'Employees', value: '2+' },
-                  { label: 'Security Clearances', value: 'Public Trust (Others Obtainable)' },
-                  { label: 'SBA Certifications', value: '8(a), SDB, HUBZone' },
-                  { label: 'NAICS Codes', value: '541511, 541512, 541519' },
+                  { label: 'Security Clearances', value: 'Obtainable' },
+                  { label: 'SAM.gov', value: 'Registered' },
+                  { label: 'NAICS Codes', value: '541512, 541519, 541611' },
                 ].map((item) => (
                   <div key={item.label} className="flex justify-between items-start gap-4 text-sm">
                     <dt className="text-gray-500 font-medium">{item.label}</dt>
@@ -74,7 +74,7 @@ export function AboutPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dark tracking-tight">
-              SBA Certifications
+              Registrations &amp; NAICS Codes
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
