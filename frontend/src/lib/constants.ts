@@ -239,7 +239,7 @@ export const SERVICES = [
 
 export const WHAT_SETS_US_APART = [
   'SAM.gov registered small business',
-  'Public Trust clearance obtainable personnel',
+  'Security clearance obtainable personnel',
   'Founder-led, hands-on delivery',
   'Federal compliance expertise (FISMA, HIPAA)',
   'Agile small business responsiveness',
