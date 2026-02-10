@@ -10,7 +10,7 @@ describe('Hero', () => {
       </MemoryRouter>,
     );
     expect(
-      screen.getByText('Your QA Partner'),
+      screen.getByText('QA Engineering for Federal Contractors and High-Stakes Software Teams'),
     ).toBeInTheDocument();
   });
 
