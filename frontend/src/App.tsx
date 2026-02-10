@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar.tsx';
 import { Footer } from './components/layout/Footer.tsx';
 import { HomePage } from './pages/HomePage.tsx';
@@ -8,9 +9,18 @@ import { ContactPage } from './pages/ContactPage.tsx';
 import { ServiceDetailPage } from './pages/ServiceDetailPage.tsx';
 import { TechnologiesPage } from './pages/TechnologiesPage.tsx';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-white text-gray-900">
         <Navbar />
         <main className="flex-1">
