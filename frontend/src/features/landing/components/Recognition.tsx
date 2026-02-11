@@ -10,11 +10,11 @@ export function Recognition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
-              <span className="text-gray-400">Registered</span><br />
+              <span className="text-gray-400">Pending</span><br />
               <span className="text-dark">small business ready for federal work</span>
             </h2>
             <p className="mt-6 text-gray-500 leading-relaxed max-w-lg">
-              As a SAM.gov registered small business, BRYQA delivers{' '}
+              With SAM.gov registration pending, BRYQA delivers{' '}
               <strong className="text-dark">quality assurance and IV&amp;V services</strong> to
               federal agencies. Our registrations and NAICS codes position us as a{' '}
               <strong className="text-dark">trusted, compliant QA partner</strong>.

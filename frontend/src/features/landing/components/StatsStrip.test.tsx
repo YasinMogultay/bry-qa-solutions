@@ -13,7 +13,7 @@ describe('StatsStrip', () => {
   it('renders stat labels', () => {
     render(<StatsStrip />);
     expect(screen.getByText('Years Combined QA Experience')).toBeInTheDocument();
-    expect(screen.getByText('SAM.gov Registered Entity')).toBeInTheDocument();
+    expect(screen.getByText('SAM.gov Registration Pending')).toBeInTheDocument();
     expect(screen.getByText('Primary NAICS Code')).toBeInTheDocument();
     expect(screen.getByText('Founder-Led Delivery')).toBeInTheDocument();
   });
