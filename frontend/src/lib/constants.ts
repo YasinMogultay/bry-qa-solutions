@@ -117,13 +117,13 @@ export const NAV_LINKS = [
 
 export const HERO_STATS = [
   { value: '15+', label: 'years of combined QA experience' },
-  { value: 'SAM', label: 'registration pending' },
+  { value: 'SAM', label: 'registered small business' },
   { value: '100%', label: 'founder-led engagement on every project' },
   { value: '508', label: 'Section 508 & WCAG accessibility expertise' },
 ] as const;
 
 export const TRUSTED_BY = [
-  'SAM.gov Pending',
+  'SAM.gov Registered',
 ] as const;
 
 export const SERVICES = [
@@ -238,7 +238,7 @@ export const SERVICES = [
 ] as const;
 
 export const WHAT_SETS_US_APART = [
-  'SAM.gov registration pending',
+  'SAM.gov registered small business',
   'Security clearance obtainable personnel',
   'Founder-led, hands-on delivery',
   'Federal compliance expertise (FISMA, HIPAA)',
@@ -248,7 +248,7 @@ export const WHAT_SETS_US_APART = [
 
 export const STATS = [
   { value: '15+', label: 'Years Combined QA Experience' },
-  { value: 'SAM', label: 'SAM.gov Registration Pending' },
+  { value: 'SAM', label: 'SAM.gov Registered Entity' },
   { value: '541512', label: 'Primary NAICS Code' },
   { value: '100%', label: 'Founder-Led Delivery' },
 ] as const;
@@ -281,15 +281,17 @@ export const PROCESS_STEPS = [
 ] as const;
 
 export const CERTIFICATIONS = [
-  { name: 'SAM.gov', description: 'System for Award Management — registration pending' },
-  { name: 'NAICS 541512', description: 'Computer Systems Design Services' },
+  { name: 'SAM.gov', description: 'System for Award Management — registered entity' },
+  { name: 'NAICS 541512', description: 'Computer Systems Design Services (Primary)' },
+  { name: 'NAICS 541511', description: 'Custom Computer Programming Services' },
   { name: 'NAICS 541519', description: 'Other Computer Related Services' },
   { name: 'NAICS 541611', description: 'Administrative Management Consulting Services' },
 ] as const;
 
 export const CONTRACT_VEHICLES = [
-  { name: 'SAM.gov', description: 'Registration pending in System for Award Management' },
-  { name: 'NAICS 541512', description: 'Computer Systems Design Services' },
+  { name: 'SAM.gov', description: 'Registered and active in System for Award Management' },
+  { name: 'NAICS 541512', description: 'Computer Systems Design Services (Primary)' },
+  { name: 'NAICS 541511', description: 'Custom Computer Programming Services' },
   { name: 'NAICS 541519', description: 'Other Computer Related Services' },
   { name: 'NAICS 541611', description: 'Administrative Management Consulting Services' },
 ] as const;
@@ -328,8 +330,9 @@ export const TEAM_MEMBERS = [
 ] as const;
 
 export const AWARDS = [
-  { name: 'SAM.gov', year: 'Pending' },
-  { name: 'NAICS 541512', year: 'Active' },
+  { name: 'SAM.gov', year: 'Registered' },
+  { name: 'NAICS 541512', year: 'Primary' },
+  { name: 'NAICS 541511', year: 'Active' },
   { name: 'NAICS 541519', year: 'Active' },
   { name: 'NAICS 541611', year: 'Active' },
 ] as const;

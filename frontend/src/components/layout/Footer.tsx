@@ -85,7 +85,7 @@ export function Footer() {
       <div className="border-t border-dark-border">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} {SITE.legalName}. All rights reserved.</p>
-          <p>UEI: Pending | CAGE: Pending</p>
+          <p>UEI: K68MRV4V6H45 | CAGE: Pending</p>
         </div>
       </div>
     </footer>

@@ -62,7 +62,7 @@ export function ContactPage() {
                 <h3 className="font-semibold text-dark mb-3">Why Choose BRYQA?</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
                   {[
-                    'SAM.gov registration pending',
+                    'SAM.gov registered small business',
                     'Security clearance obtainable personnel',
                     'Federal compliance expertise',
                     'Founder-led, hands-on delivery',

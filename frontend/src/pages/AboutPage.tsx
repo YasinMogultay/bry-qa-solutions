@@ -56,8 +56,8 @@ export function AboutPage() {
                   { label: 'Headquarters', value: 'DFW,TX' },
                   { label: 'Employees', value: '2+' },
                   { label: 'Security Clearances', value: 'Obtainable' },
-                  { label: 'SAM.gov', value: 'Pending' },
-                  { label: 'NAICS Codes', value: '541512, 541519, 541611' },
+                  { label: 'SAM.gov', value: 'Registered' },
+                  { label: 'NAICS Codes', value: '541512, 541511, 541519, 541611' },
                 ].map((item) => (
                   <div key={item.label} className="flex justify-between items-start gap-4 text-sm">
                     <dt className="text-gray-500 font-medium">{item.label}</dt>
