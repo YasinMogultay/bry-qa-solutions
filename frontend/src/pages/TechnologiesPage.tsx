@@ -59,7 +59,7 @@ export function TechnologiesPage() {
             Need expertise with a specific tool?
           </h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-            Our engineers are certified and experienced across this full stack.
+            Our engineers are trained and experienced across this full stack.
             Tell us about your project and we'll match the right expertise.
           </p>
           <Link

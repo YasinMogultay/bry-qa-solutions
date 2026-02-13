@@ -127,7 +127,7 @@ const CAPABILITIES: Record<string, string[]> = {
     'System integration verification',
     'Acceptance test planning and execution',
     'Risk-based test prioritization',
-    'CMMI-aligned process documentation',
+    'Structured process documentation',
     'Compliance reporting for government stakeholders',
   ],
 };
