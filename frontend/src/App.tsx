@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { Navbar } from './components/layout/Navbar.tsx';
-import { Footer } from './components/layout/Footer.tsx';
-import { HomePage } from './pages/HomePage.tsx';
-import { ServicesPage } from './pages/ServicesPage.tsx';
-import { AboutPage } from './pages/AboutPage.tsx';
-import { ContactPage } from './pages/ContactPage.tsx';
-import { ServiceDetailPage } from './pages/ServiceDetailPage.tsx';
-import { TechnologiesPage } from './pages/TechnologiesPage.tsx';
+import { BrowserRouter, /*Routes, Route,*/ useLocation } from 'react-router-dom';
+// import { Navbar } from './components/layout/Navbar.tsx';
+// import { Footer } from './components/layout/Footer.tsx';
+// import { HomePage } from './pages/HomePage.tsx';
+// import { ServicesPage } from './pages/ServicesPage.tsx';
+// import { AboutPage } from './pages/AboutPage.tsx';
+// import { ContactPage } from './pages/ContactPage.tsx';
+// import { ServiceDetailPage } from './pages/ServiceDetailPage.tsx';s
+// import { TechnologiesPage } from './pages/TechnologiesPage.tsx';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
