@@ -27,7 +27,8 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+    <h5> Coming Soon! </h5>
+      {/* <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-white text-gray-900">
         <Navbar />
         <main className="flex-1">
@@ -41,7 +42,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </div>
+      </div> */}
     </BrowserRouter>
   );
 }
