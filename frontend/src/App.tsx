@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { BrowserRouter, /*Routes, Route,*/ useLocation } from 'react-router-dom';
+// import { useEffect } from 'react';
+import { BrowserRouter, /*Routes, Route, useLocation*/} from 'react-router-dom';
 // import { Navbar } from './components/layout/Navbar.tsx';
 // import { Footer } from './components/layout/Footer.tsx';
 // import { HomePage } from './pages/HomePage.tsx';
@@ -9,20 +9,20 @@ import { BrowserRouter, /*Routes, Route,*/ useLocation } from 'react-router-dom'
 // import { ServiceDetailPage } from './pages/ServiceDetailPage.tsx';s
 // import { TechnologiesPage } from './pages/TechnologiesPage.tsx';
 
-function ScrollToTop() {
-  const { pathname, hash } = useLocation();
-  useEffect(() => {
-    if (hash) {
-      const el = document.getElementById(hash.slice(1));
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
-    }
-    window.scrollTo(0, 0);
-  }, [pathname, hash]);
-  return null;
-}
+// function ScrollToTop() {
+//   const { pathname, hash } = useLocation();
+//   useEffect(() => {
+//     if (hash) {
+//       const el = document.getElementById(hash.slice(1));
+//       if (el) {
+//         el.scrollIntoView({ behavior: 'smooth' });
+//         return;
+//       }
+//     }
+//     window.scrollTo(0, 0);
+//   }, [pathname, hash]);
+//   return null;
+// }
 
 function App() {
   return (
