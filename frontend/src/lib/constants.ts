@@ -7,12 +7,12 @@ export const SITE = {
   description:
     'BRYQA is a small business delivering quality assurance, test automation, and independent verification & validation services to federal agencies and commercial organizations.',
   email: 'info@bryqasolutions.com',
-  phone: '(210) 740-8829',
+  phone: '',
   address: {
-    street: 'Madison Ct',
-    city: 'Celina',
+    street: '',
+    city: 'DFW',
     state: 'TX',
-    zip: '75009',
+    zip: '',
   },
 } as const;
 
